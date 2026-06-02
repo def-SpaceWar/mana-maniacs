@@ -1,11 +1,10 @@
 [gd_scene format=3 uid="uid://b1f60brn7okxt"]
 
-[ext_resource type="PackedScene" uid="uid://mwvw7cijaq1" path="res://MAP.glb" id="1_rxhv2"]
+[ext_resource type="PackedScene" uid="uid://c611q4fwhrkjk" path="res://MAPS/Lakes and Plains/INHERITED_SCENES/ground.tscn" id="1_rxhv2"]
 
 [node name="Node3D" type="Node3D" unique_id=19216148]
 
-[node name="MAP" parent="." unique_id=736340246 instance=ExtResource("1_rxhv2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150.90685, -46.09457, 46.053223)
+[node name="Camera3D" type="Camera3D" parent="." unique_id=507490352]
+transform = Transform3D(0.7647302, -0.37966713, 0.5206155, -4.947527e-09, 0.80796933, 0.5892246, -0.6443506, -0.45059785, 0.61787856, 118.89691, 44.634247, 30.311836)
 
-[node name="Camera3D" type="Camera3D" parent="." unique_id=558619125]
-current = true
+[node name="MAP1" parent="." unique_id=543750868 instance=ExtResource("1_rxhv2")]
