@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Mana Maniacs"
-run/main_scene="uid://b1f60brn7okxt"
+run/main_scene="uid://1f37sn2newgj"
 config/features=PackedStringArray("4.6", "C#", "Mobile")
 config/icon="res://icon.svg"
 
