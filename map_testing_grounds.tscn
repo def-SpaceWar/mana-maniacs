@@ -2,9 +2,31 @@
 
 [ext_resource type="PackedScene" uid="uid://c611q4fwhrkjk" path="res://MAPS/Lakes and Plains/INHERITED_SCENES/ground.tscn" id="1_rxhv2"]
 
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_rxhv2"]
+sky_top_color = Color(0.4122772, 0.5510527, 1, 1)
+sky_horizon_color = Color(0.56465894, 0.59935284, 0.7115897, 1)
+ground_bottom_color = Color(0, 0, 0, 1)
+ground_horizon_color = Color(0.56465894, 0.59935284, 0.7115897, 1)
+
+[sub_resource type="Sky" id="Sky_e4pr8"]
+sky_material = SubResource("ProceduralSkyMaterial_rxhv2")
+
+[sub_resource type="Environment" id="Environment_tugly"]
+background_mode = 2
+sky = SubResource("Sky_e4pr8")
+tonemap_mode = 2
+glow_enabled = true
+
 [node name="Node3D" type="Node3D" unique_id=19216148]
 
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1124960217]
+environment = SubResource("Environment_tugly")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=378742760]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
 [node name="Camera3D" type="Camera3D" parent="." unique_id=507490352]
-transform = Transform3D(0.7647302, -0.37966713, 0.5206155, -4.947527e-09, 0.80796933, 0.5892246, -0.6443506, -0.45059785, 0.61787856, 118.89691, 44.634247, 30.311836)
+transform = Transform3D(0.7647302, -0.3796672, 0.5206155, -4.947527e-09, 0.80796933, 0.5892246, -0.6443506, -0.45059782, 0.61787856, -1.7845993, 31.019049, -54.74879)
 
 [node name="MAP1" parent="." unique_id=543750868 instance=ExtResource("1_rxhv2")]
