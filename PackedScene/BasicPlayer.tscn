@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://c7ci87o1ldtmw"]
+
+[ext_resource type="Script" uid="uid://bwm3ux52tcovv" path="res://Scripts/FPSController.cs" id="1_levgq"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_mo8hg"]
+height = 3.0
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_jx2ah"]
+height = 3.0
+
+[node name="BasicPlayer" type="CharacterBody3D" unique_id=1956529250]
+script = ExtResource("1_levgq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=604087914]
+shape = SubResource("CapsuleShape3D_mo8hg")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=806213248]
+mesh = SubResource("CapsuleMesh_jx2ah")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=279364307]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.344665, 0)

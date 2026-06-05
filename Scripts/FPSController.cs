@@ -3,8 +3,8 @@ using System;
 
 public partial class FPSController : CharacterBody3D
 {
-	[Export] public float Speed = 8.0f;
-	[Export] public float JumpVelocity = 6f;
+	[Export] public float Speed = 12.0f;
+	[Export] public float JumpVelocity = 10f;
 	[Export] public float Sensitivity = 3f;
 
     public override void _Ready()
