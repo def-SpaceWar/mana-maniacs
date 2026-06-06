@@ -15,6 +15,10 @@ run/main_scene="uid://1f37sn2newgj"
 config/features=PackedStringArray("4.6", "C#", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+EosManager="*uid://bsfpvvtu4kn4b"
+
 [dotnet]
 
 project/assembly_name="Mana Maniacs"
@@ -55,3 +59,4 @@ player_jump={
 
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true

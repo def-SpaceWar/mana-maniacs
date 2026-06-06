@@ -5,4 +5,26 @@
     <EnableDynamicLoading>true</EnableDynamicLoading>
     <RootNamespace>ManaManiacs</RootNamespace>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(RuntimeIdentifier)' == ''">
+    <DefineConstants Condition="$([MSBuild]::IsOSPlatform('Windows'))">$(DefineConstants);EOS_PLATFORM_WINDOWS_64</DefineConstants>
+    <DefineConstants Condition="$([MSBuild]::IsOSPlatform('Linux'))">$(DefineConstants);EOS_PLATFORM_LINUX</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(RuntimeIdentifier)' != ''">
+    <DefineConstants Condition="$(RuntimeIdentifier.StartsWith('win'))">$(DefineConstants);EOS_PLATFORM_WINDOWS_64</DefineConstants>
+    <DefineConstants Condition="$(RuntimeIdentifier.StartsWith('linux'))">$(DefineConstants);EOS_PLATFORM_LINUX</DefineConstants>
+    <DefineConstants Condition="$(RuntimeIdentifier.StartsWith('android'))">$(DefineConstants);EOS_PLATFORM_ANDROID</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="EOS/Bin/EOSSDK-Win64-Shipping.dll">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        <Link>EOSSDK-Win64-Shipping.dll</Link>
+    </None>   
+    <None Include="EOS/Bin/libEOSSDK-Linux-Shipping.so">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        <Link>libEOSSDK-Linux-Shipping.so</Link>
+    </None>
+</ItemGroup>
 </Project>

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dyxdrnohcluq4"
 path.s3tc="res://.godot/imported/TREES_Diffuse_palette_2.jpg-3e2c355670f5c7196272b312864bcf8d.s3tc.ctex"
+path.etc2="res://.godot/imported/TREES_Diffuse_palette_2.jpg-3e2c355670f5c7196272b312864bcf8d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://MAPS/Lakes and Plains/TREES_Diffuse_palette_2.jpg"
-dest_files=["res://.godot/imported/TREES_Diffuse_palette_2.jpg-3e2c355670f5c7196272b312864bcf8d.s3tc.ctex"]
+dest_files=["res://.godot/imported/TREES_Diffuse_palette_2.jpg-3e2c355670f5c7196272b312864bcf8d.s3tc.ctex", "res://.godot/imported/TREES_Diffuse_palette_2.jpg-3e2c355670f5c7196272b312864bcf8d.etc2.ctex"]
 
 [params]
 

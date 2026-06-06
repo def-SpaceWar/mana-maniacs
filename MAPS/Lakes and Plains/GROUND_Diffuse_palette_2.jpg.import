@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://h67ncvhi0xfk"
 path.s3tc="res://.godot/imported/GROUND_Diffuse_palette_2.jpg-7d715b6717e8cef7d1898f2e37f0a686.s3tc.ctex"
+path.etc2="res://.godot/imported/GROUND_Diffuse_palette_2.jpg-7d715b6717e8cef7d1898f2e37f0a686.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://MAPS/Lakes and Plains/GROUND_Diffuse_palette_2.jpg"
-dest_files=["res://.godot/imported/GROUND_Diffuse_palette_2.jpg-7d715b6717e8cef7d1898f2e37f0a686.s3tc.ctex"]
+dest_files=["res://.godot/imported/GROUND_Diffuse_palette_2.jpg-7d715b6717e8cef7d1898f2e37f0a686.s3tc.ctex", "res://.godot/imported/GROUND_Diffuse_palette_2.jpg-7d715b6717e8cef7d1898f2e37f0a686.etc2.ctex"]
 
 [params]
 

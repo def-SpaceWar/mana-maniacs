@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnaybs6so3pv0"
 path.s3tc="res://.godot/imported/MAP_Diffuse_palette_2.jpg-75e5a704688cbdd01e4cc3089ea54c50.s3tc.ctex"
+path.etc2="res://.godot/imported/MAP_Diffuse_palette_2.jpg-75e5a704688cbdd01e4cc3089ea54c50.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://MAP_Diffuse_palette_2.jpg"
-dest_files=["res://.godot/imported/MAP_Diffuse_palette_2.jpg-75e5a704688cbdd01e4cc3089ea54c50.s3tc.ctex"]
+dest_files=["res://.godot/imported/MAP_Diffuse_palette_2.jpg-75e5a704688cbdd01e4cc3089ea54c50.s3tc.ctex", "res://.godot/imported/MAP_Diffuse_palette_2.jpg-75e5a704688cbdd01e4cc3089ea54c50.etc2.ctex"]
 
 [params]
 

@@ -1,5 +1,4 @@
 using Godot;
-using System;
 
 public partial class FPSController : CharacterBody3D
 {
@@ -10,6 +9,11 @@ public partial class FPSController : CharacterBody3D
     public override void _Ready()
 	{
 		Input.MouseMode = Input.MouseModeEnum.Captured;
+
+		if (EOSManager.Instance != null)
+		{
+			JumpVelocity = 100000f;
+		}
 	}
 
 	public override void _PhysicsProcess(double delta)
