@@ -12,7 +12,8 @@ public partial class FPSController : CharacterBody3D
 
 		if (EOSManager.Instance != null)
 		{
-			JumpVelocity = 100000f;
+			Speed = 60f;
+			JumpVelocity = 50f;
 		}
 	}
 
